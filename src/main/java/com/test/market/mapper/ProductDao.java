@@ -2,7 +2,9 @@ package com.test.market.mapper;
 
 import com.test.market.bean.ProductPo;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface ProductDao {
     // 获取产品
     public ProductPo getProduct(Long id);
